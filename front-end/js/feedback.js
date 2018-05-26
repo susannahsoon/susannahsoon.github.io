@@ -19,7 +19,7 @@ $.get('//ipinfo.io', function(response) {
   };
 }, 'jsonp');
 
-var lastReviewedOcrMsPromise = $.get('/timestamps.json').then(function(data) {
+var lastReviewedOcrMsPromise = $.get('../timestamps.json').then(function(data) {
   return data.ocr_ms;
 });
 
